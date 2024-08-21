@@ -375,11 +375,11 @@ class FrontendController extends Controller
             Auth::guard('user')->login($created);
 
             $details = [
-                'subject' => 'Welcome to erthoo.com',
+                'subject' => 'Welcome to mhzone.com',
                 'greeting' => 'Hi ' . $created['name'] . ', ',
                 'body' => 'You have successfully registered to ' . env('APP_NAME'),
                 'email' => 'Your email is : ' . $created['email'],
-                'thanks' => 'Thank you for using our erthoo.com . ',
+                'thanks' => 'Thank you for using our mhzone.com . ',
             ];
 
             $admin = Admin::first();
@@ -388,7 +388,7 @@ class FrontendController extends Controller
                 'greeting' => 'Hi ' . $admin->name . ', ',
                 'body' => 'An user ' . $created['name'] . ' registered to ' . env('APP_NAME'),
                 'email' => 'User email is : ' . $created['email'],
-                'thanks' => 'Thank you for using our erthoo.com . ',
+                'thanks' => 'Thank you for using our mhzone.com . ',
             ];
 
             Notification::route('mail', $created['email'])->notify(new WelcomeNotification($details));

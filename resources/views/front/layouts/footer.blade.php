@@ -2,7 +2,7 @@
     <div class="container">
         <div class="md:d-flex justify-content-between align-items-center">
             <div class="copyright">
-                <p>Copyright © erthoo. All rights reserved.</p>
+                <p>Copyright © mhzone. All rights reserved.</p>
             </div>
             <div class="footer_menu">
                 <ul class="d-flex align-items-center justify-content-center">

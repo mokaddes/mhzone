@@ -1,4 +1,4 @@
 <footer class="main-footer">
-    <strong> Copyright {{ date('Y') }} erthoo.com.</strong>
+    <strong> Copyright {{ date('Y') }} mhzone.com.</strong>
     All Rights Reserved.
 </footer>

@@ -96,10 +96,10 @@
                                 </li>
 
                                 @if (is_seller())
-                                    <p class="mb-1 mt-1"><strong>Earn With Erthoo</strong></p>
+                                    <p class="mb-1 mt-1"><strong>Earn With mhzone</strong></p>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('frontend.post.create') }}">Sell on
-                                            erthoo
+                                            mhzone
                                             <i class="la la-angle-right"></i></a>
                                     </li>
                                 @endif
@@ -158,7 +158,7 @@
     aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header mt-4">
         <h5 class="offcanvas-title" id="mobileMenuLabel">
-            <a href="{{ route('frontend.index') }}" class="text-dark">erthoo</a>
+            <a href="{{ route('frontend.index') }}" class="text-dark">mhzone</a>
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -249,11 +249,11 @@
                                 Center <i class="la la-angle-right"></i></a>
                         </li>
                         @if (is_seller())
-                            <p class="mb-1 mt-1"><strong>Earn With Erthoo</strong></p>
+                            <p class="mb-1 mt-1"><strong>Earn With mhzone</strong></p>
                             <li>
                                 <a class="dropdown-item" href="{{ route('frontend.post.create') }}">Sell
                                     on
-                                    erthoo <i class="la la-angle-right"></i></a>
+                                    mhzone <i class="la la-angle-right"></i></a>
                             </li>
                         @endif
                         <div class="d-flex justify-content-between">
@@ -317,7 +317,7 @@
                 </a>
             </div> -->
             <div class="app_name">
-                <h3><a href="{{ route('frontend.index') }}">erthoo</a></h3>
+                <h3><a href="{{ route('frontend.index') }}">mhzone</a></h3>
             </div>
             <div class="notification_alert">
                 <a href="{{ route('frontend.cart.index') }}">

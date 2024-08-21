@@ -26,7 +26,7 @@
                     <h3>Edit Profile</h3>
                 </div>
                 <div class="breadcrumb_name">
-                    <h3>erthoo</h3>
+                    <h3>mhzone</h3>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
             <div class="login_form signup text-center">
                 {{-- <div class="pt-4 pt-sm-0 d-block d-sm-none">
                     <h4>Welcome to</h4>
-                    <h2>erthoo</h2>
+                    <h2>mhzone</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Lobortis posuere egestas vitae placerat lorem
                         elementum
@@ -57,7 +57,7 @@
                                     <input type="file" name="image" id="image"
                                         accept="image/png, image/jpeg, image/jpg" class="form-control file_input">
                                     <span class="d-block d-sm-none mt-4 d-block text-sm">
-                                        "Erthoo" Would Like to Access Your Photos. (To choose user profile image)
+                                        "mhzone" Would Like to Access Your Photos. (To choose user profile image)
                                     </span>
                                 </div>
                             </div>

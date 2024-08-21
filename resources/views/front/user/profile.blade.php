@@ -57,9 +57,9 @@
                         </li>
 
                         @if (is_seller())
-                            <p class="mb-1 mt-1"><strong>Earn With Erthoo</strong></p>
+                            <p class="mb-1 mt-1"><strong>Earn With mhzone</strong></p>
                             <li>
-                                <a class="dropdown-item" href="{{ route('frontend.post.create') }}">Sell on erthoo <i
+                                <a class="dropdown-item" href="{{ route('frontend.post.create') }}">Sell on mhzone <i
                                         class="la la-angle-right"></i></a>
                             </li>
                         @endif

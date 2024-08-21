@@ -385,22 +385,22 @@ class DashboardController extends Controller
         return back();
     }
 
-    
+
     public function deleteAccount(Request $request, $id)
     {
         $request->validate([
             'del_acc' => 'required',
         ]);
-        
+
         $user = User::findOrFail($id);
 
         $ads_exists = DB::table('ads')->where('user_id', $user->id)->first();
-        
+
         if($ads_exists) {
             flashError('You can not delete your account due to exists your ads. Please at first delete your ads.');
             return redirect()->back();
         }
-        
+
         if($request->del_acc === "delete"){
             $user->delete();
             Auth::guard('user')->logout();
@@ -409,7 +409,7 @@ class DashboardController extends Controller
             return redirect()->back();
         }
 
-        flashSuccess('Your account was successfully deleted. Thank you to use erthoo.com');
+        flashSuccess('Your account was successfully deleted. Thank you to use mhzone.com');
         return redirect()->route('frontend.signup');
 
     }
@@ -428,7 +428,7 @@ class DashboardController extends Controller
 
     //     Auth::guard('user')->logout();
 
-    //     flashSuccess('Your account was successfully deleted. Thank you to use erthoo.com');
+    //     flashSuccess('Your account was successfully deleted. Thank you to use mhzone.com');
     //     return redirect()->route('frontend.signup');
 
     // }

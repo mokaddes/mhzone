@@ -37,7 +37,7 @@
         <div class="container">
             <div class="login_form text-center">
                 <h4>Welcome to</h4>
-                <h2>erthoo</h2>
+                <h2>mhzone</h2>
                 {{-- <p>
                     Elevate Your Footwear Game with Style, Comfort, and Quality
                 </p> --}}

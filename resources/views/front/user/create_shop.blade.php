@@ -9,7 +9,7 @@
             <div class="login_form signup text-center" style="position:inherit !important;">
                 <div class="image_round mb-4">
                     <img src="{{  asset(Auth::user()->image ?? 'front/assets/images/profile.png') }}" class="img-fluid mb-2" alt="image">
-                   <h3> Create a shop on erthoo</h3>
+                   <h3> Create a shop on mhzone</h3>
                 </div>
                 <div class="row d-flex justify-content-center mb-5">
                     <div class="col-lg-6">

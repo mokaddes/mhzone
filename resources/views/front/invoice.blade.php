@@ -225,7 +225,7 @@
                     </div>
                 @endforeach
                 <footer>
-                    <p>Thank you for stay with erthoo!</p>
+                    <p>Thank you for stay with mhzone!</p>
                 </footer>
             </div>
         </div>
