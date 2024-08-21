@@ -1,0 +1,13 @@
+{
+    "name": "ChildCategory",
+    "alias": "childcategory",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ChildCategory\\Providers\\ChildCategoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

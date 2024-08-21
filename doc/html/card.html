@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .card-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: transform 0.6s ease;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .card-side.front {
+            background-color: #f2f2f2;
+        }
+
+        .card-side.back {
+            transform: rotateY(180deg);
+            background-color: #333;
+        }
+
+        .card-type {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 30px;
+            background-image: url('https://raw.githubusercontent.com/falconmasters/formulario-tarjeta-credito-3d/master/img/chip-tarjeta.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .card-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .card-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+        }
+
+        .card-holder {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-expiry {
+            font-size: 16px;
+        }
+
+        .card-cvc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateY(180deg);
+            font-size: 30px;
+            color: #fff;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-side front">
+                <div class="card-type"></div>
+                <div class="card-number"></div>
+                <div class="card-info">
+                    <div class="card-holder"></div>
+                    <div class="card-expiry"></div>
+                </div>
+            </div>
+            <div class="card-side back">
+                <div class="card-cvc"></div>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" maxlength="16" required>
+            </div>
+            <div class="form-group">
+                <label for="card-holder">Card Holder</label>
+                <input type="text" id="card-holder" required>
+            </div>
+            <div class="form-group">
+                <label for="exp-date">Expiration Date</label>
+                <input type="text" id="exp-date" maxlength="5" required>
+            </div>
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" maxlength="3" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // get elements
+const cardNumberElement = document.getElementById("card-number");
+const cardHolderElement = document.getElementById("card-holder");
+const expiryElement = document.getElementById("exp-date");
+const cvcElement = document.getElementById("cvc");
+const cardTypeElement = document.querySelector(".card-type");
+const cardNumberDisplayElement = document.querySelector(".card-number");
+const cardHolderDisplayElement = document.querySelector(".card-holder");
+const expiryDisplayElement = document.querySelector(".card-expiry");
+const cvcDisplayElement = document.querySelector(".card-cvc");
+const cardFrontElement = document.querySelector(".card-side.front");
+const cardBackElement = document.querySelector(".card-side.back");
+
+// listen for card number input
+cardNumberElement.addEventListener("input", (e) => {
+  // get input value and remove non-digit characters
+  let cardNumber = e.target.value.replace(/\D/g, "");
+  // get card type
+  let cardType = "unknown";
+  if (/^4/.test(cardNumber)) {
+    cardType = "visa";
+  } else if (/^5[1-5]/.test(cardNumber)) {
+    cardType = "mastercard";
+  } else if (/^3[47]/.test(cardNumber)) {
+    cardType = "amex";
+  } else if (/^6/.test(cardNumber)) {
+    cardType = "discover";
+  }
+  // update card type image
+  cardTypeElement.style.backgroundImage = `url('https://i.imgur.com/${cardType}.png')`;
+  // update card number display
+  let maskedCardNumber = cardNumber.padEnd(16, "*").replace(/(.{4})/g, "$1 ");
+  cardNumberDisplayElement.textContent = maskedCardNumber;
+  // update card number input
+  e.target.value = maskedCardNumber.replace(/\s/g, "");
+  // show card
+  cardFrontElement.style.transform = "rotateY(0deg)";
+  cardBackElement.style.transform = "rotateY(180deg)";
+});
+
+// listen for card holder input
+cardHolderElement.addEventListener("input", (e) => {
+  // update card holder display
+  cardHolderDisplayElement.textContent = e.target.value;
+});
+
+// listen for expiry input
+expiryElement.addEventListener("input", (e) => {
+  // update expiry display
+  expiryDisplayElement.textContent = e.target.value;
+});
+
+// listen for cvc input
+cvcElement.addEventListener("input", (e) => {
+  // update cvc display
+  cvcDisplayElement.textContent = e.target.value;
+  // rotate card to back
+  cardFrontElement.style.transform = "rotateY(180deg)";
+  cardBackElement.style.transform = "rotateY(0deg)";
+});
+
+    </script>
+
+</body>
+
+</html>

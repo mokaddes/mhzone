@@ -1,0 +1,241 @@
+@media screen and (min-width:1200px) {
+    .product_details {
+        border-right: 2px solid var(--black);
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .header .nav-link {
+        padding: 20px 11px !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .carousel_product .price {
+        float: right;
+        bottom: 7px;
+        right: 28px;
+        position: absolute;
+    }
+
+    .checkout_address {
+        padding-left: 172px;
+    }
+
+    .cart_img {
+        transform: translate(0px, 75px);
+    }
+
+    .cart_product {
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .header {
+        padding: 12px 0px;
+    }
+
+    .header .nav-link {
+        display: block;
+        padding: 12px 0px !important;
+    }
+
+    .header .offcanvas-body {
+        padding: 0px 15px;
+    }
+
+    .header .dropdown-menu[data-bs-popper] {
+        width: 100%;
+    }
+
+    .carousel_product .product_img {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    .carousel_product .content h2 {
+        font-size: 20px;
+    }
+
+    .carousel_product .btn.btn-primary {
+        padding: 13px 52px;
+    }
+
+    .carousel_product .carousel_item {
+        padding: 10px;
+    }
+
+    .deal_products .carousel_item {
+        padding: 20px;
+    }
+
+    .order_status h5,
+    .order_status h3 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cart_img img {
+        width: 134px;
+    }
+
+    .cart_img {
+        transform: translate(0px, 44px);
+    }
+
+    .product_name h3 {
+        font-size: 20px;
+    }
+
+    .product_name span {
+        font-size: 15px;
+    }
+
+    .incrementBtnR,
+    .incrementBtnL {
+        font-size: 25px;
+        padding: 3px 10px;
+        line-height: 39px;
+    }
+
+    .incrementNum {
+        font-size: 22px;
+        line-height: 39px;
+        padding: 2px 3px;
+        width: 53px;
+    }
+
+    .cart_product {
+        margin-bottom: 50px;
+    }
+
+    .product_img img {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .product_name h3 {
+        font-size: 15px;
+    }
+
+    .product_name span {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width:575px) {
+    .shop_filter .title h4 {
+        font-size: 16px;
+    }
+
+    .filter_group_btn .btn-primary,
+    .filter_group_btn .btn-outline-primary {
+        padding: 10px 13px !important;
+        width: 102px;
+    }
+
+    .filter_btn {
+        display: none;
+    }
+
+    .login_form h4 {
+        font-size: 27px;
+    }
+
+    .login_form h2 {
+        font-size: 38px;
+    }
+
+    .login_form p {
+        font-size: 15px;
+    }
+
+    .login_form h3 {
+        font-size: 25px;
+    }
+
+    .order_details .order h3 {
+        font-size: 18px;
+    }
+
+    .order_details .order p {
+        font-size: 17px;
+    }
+
+    .order_details {
+        padding-top: 50px;
+    }
+
+    .order_table tr td {
+        font-size: 13px;
+        padding: 4px 0px;
+    }
+
+    .delivery_address h3,
+    .delivery_address p {
+        font-size: 14px;
+    }
+
+    .breadcrumb_name h3 {
+        font-size: 20px;
+    }
+
+    .track_order .cols {
+        font-size: 13px !important;
+    }
+
+    .product_filter_sec .btn {
+        line-height: 34px;
+        padding: 15px 64px;
+        font-size: 25px;
+    }
+
+    .filter_wrap .form-check-label {
+        padding: 11px 17px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .payment_btn a {
+        width: 88%;
+        font-size: 13px;
+    }
+
+    .delivery_option h3 {
+        font-size: 14px;
+    }
+
+    .option_box {
+        padding: 15px;
+    }
+
+    .option_value h4 {
+        font-size: 12px;
+    }
+
+    .cart_img {
+        transform: translate(0px, 0px);
+    }
+
+    .incrementBtnR,
+    .incrementBtnL {
+        line-height: 40px;
+        margin: 0px -5px;
+    }
+
+    .incrementNum {
+        line-height: 40px;
+        padding: 2px 2px;
+        transform: translate(0px, -1px);
+    }
+
+    .cart_product {
+        margin-bottom: 21px;
+    }
+
+}

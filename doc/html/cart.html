@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ============================== desktop header =================================== -->
+    <div class="header shadow-sm d-none d-sm-block mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-0">
+                <a class="navbar-brand p-0" href="index.html">erthoo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"
+                    aria-controls="mobileMenu">
+                    <i class="las la-bars"></i>
+                </button>
+                <!-- desktop menu -->
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my-order.html">My Orders</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item pe-lg-5 ps-lg-5 d-flex align-items-center">
+                            <form action="#" method="post">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="la la-search"></i></span>
+                                    <input class="form-control" type="search" placeholder="Search">
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hi ! <strong>Jyotirmoy</strong>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div>
+                                        <a class="btn btn-primary" href="my-order.html">
+                                            <i class="las la-shopping-cart"></i>
+                                            Your Orders
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-primary" href="wishlist.html">
+                                            <i class="las la-heart"></i>
+                                            Wish List
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p><strong>Account Settings</strong></p>
+                                <li>
+                                    <a class="dropdown-item" href="my-ads.html">My Items<i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item" href="edit-profile.html">Edit Profile <i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="saved-cards.html">Saved Cards <i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="saved-address.html">Saved Addresses <i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="transaction.html">Transactions <i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Help Center <i class="la la-angle-right"></i></a>
+                                </li>
+                                <p class="mb-1 mt-1"><strong>Earn With Erthoo</strong></p>
+                                <li>
+                                    <a class="dropdown-item" href="ad-post.html">Sell on erthoo <i
+                                            class="la la-angle-right"></i></a>
+                                </li>
+                                <div class="logout text-center mt-3">
+                                    <a href="login.html" class="btn btn-primary">
+                                        <i class="las la-sign-out-alt"></i>
+                                        Log out
+                                    </a>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item">
+                            <a class="ps-2 pe-2" href="#">
+                                <img src="assets/images/icons/bell.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-2 pe-2" href="cart.html">
+                                <img src="assets/images/icons/cart.svg" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- offcanvas menu -->
+                <div class="mobile_menu offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="mobileMenu"
+                    aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <a href="index.html">Erthoo</a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <form action="#" method="post" class="mb-2">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="la la-search"></i></span>
+                                    <input class="form-control" type="search" placeholder="Search" required>
+                                </div>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="my-order.html">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="wishlist.html">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Hi ! <strong>Jyotirmoy</strong>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <div class="ustify-content-between mb-3">
+                                        <a class="btn btn-primary mb-2 w-100" href="order.html">
+                                            <i class="las la-shopping-cart"></i>
+                                            Your Orders
+                                        </a>
+                                        <a class="btn btn-primary w-100" href="wishlist.html">
+                                            <i class="las la-heart"></i>
+                                            Wish List
+                                        </a>
+                                    </div>
+
+                                    <p><strong>Account Settings</strong></p>
+                                    <li>
+                                        <a class="dropdown-item" href="my-ads.html">My Items<i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="message.html">Message (01)<i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="edit-profile.html">Edit Profile <i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="saved-cards.html">Saved Cards <i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="saved-address.html">Saved Addresses <i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="transaction.html">Transactions <i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Help Center <i class="la la-angle-right"></i></a>
+                                    </li>
+                                    <p class="mb-1 mt-1"><strong>Earn With Erthoo</strong></p>
+                                    <li>
+                                        <a class="dropdown-item" href="ad-post.html">Sell on erthoo <i
+                                                class="la la-angle-right"></i></a>
+                                    </li>
+                                    <div class="logout text-center mt-3">
+                                        <a href="login.html" class="btn btn-primary">
+                                            <i class="las la-sign-out-alt"></i>
+                                            Log out
+                                        </a>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="d-flex justify-content-between">
+                                <li class="nav-item">
+                                    <a class="ps-2 pe-2 nav-link" href="#">
+                                        <img src="assets/images/icons/bell.svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ps-2 pe-2 nav-link" href="cart.html">
+                                        <img src="assets/images/icons/cart.svg" alt="icon">
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================== desktop header ================================== -->
+
+    <!-- ============================== Header mobile device ================================== -->
+    <div class="d-block d-sm-none">
+        <div class="p-3 bg-white">
+            <div class="app_name">
+                <div class="back_btn position-absolute">
+                    <a href="index.html">
+                        <img src="assets/images/icons/back.svg" alt="icon">
+                    </a>
+                </div>
+                <h3 class="text-center m-0"><a href="index.html">erthoo</a></h3>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Header mobile device ================================== -->
+
+
+    <!-- ============================== breadcrumb ================================== -->
+    <div class="breadcrumb mb-3 mb-sm-5">
+        <div class="container">
+            <div class="breadcrumb_name">
+                <h3 class="d-none d-sm-block">Cart</h3>
+                <h3 class="d-block d-sm-none">My Cart</h3>
+                <p class="d-block d-sm-none">Products Checkout</p>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== breadcrumb ================================== -->
+
+    <!-- ============================== cart ================================== -->
+    <div class="cart_section">
+        <div class="container">
+
+            <!-- cart product -->
+            <div class="cart_product">
+                <div class="row gy-3 align-items-center text-center text-sm-start">
+                    <div class="col-sm-4">
+                        <div class="cart_img">
+                            <img src="assets/images/products/shoe.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product_name text-center">
+                            <h3>Nike air Jordan</h3>
+                            <span>$ 5,99.00 |  1x | S7</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="cart_qty float-sm-end">
+                            <div class="d-sm-flex align-items-center">
+                                <button class="incrementBtnR">+</button>
+                                <input type="text" class="incrementNum" name="qty" id="qty" value="1" min="1" readonly>
+                                <button class="incrementBtnL">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart product -->
+            <div class="cart_product">
+                <div class="row gy-3 align-items-center text-center text-sm-start">
+                    <div class="col-sm-4">
+                        <div class="cart_img">
+                            <img src="assets/images/products/shoe.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product_name text-center">
+                            <h3>Nike air Jordan</h3>
+                            <span>$ 5,99.00 |  1x | S7</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="cart_qty float-sm-end">
+                            <div class="d-sm-flex align-items-center">
+                                <button class="incrementBtnR">+</button>
+                                <input type="number" class="incrementNum" name="qty" id="qty" value="1" min="1" readonly>
+                                <button class="incrementBtnL">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart product -->
+            <div class="cart_product">
+                <div class="row gy-3 align-items-center text-center text-sm-start">
+                    <div class="col-sm-4">
+                        <div class="cart_img">
+                            <img src="assets/images/products/shoe.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product_name text-center">
+                            <h3>Nike air Jordan</h3>
+                            <span>$ 5,99.00 |  1x | S7</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="cart_qty float-sm-end">
+                            <div class="d-sm-flex align-items-center">
+                                <button class="incrementBtnR">+</button>
+                                <input type="number" class="incrementNum" name="qty" id="qty" value="1" min="1" readonly>
+                                <button class="incrementBtnL">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="d-md-flex justify-content-between">
+                <div class="coupon">
+                    <div class="coupon_form mb-4">
+                        <form action="#" method="post">
+                            <div class="d-flex justify-content-between">
+                                <div class="input-group me-3">
+                                    <span class="input-group-text"><img src="assets/images/Ticket_use.png" alt=""></span>
+                                    <input type="text" name="coupon_name" id="coupon_name" class="form-control" placeholder="Enter Coupon Code" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order_table mb-5">
+                        <h3>Price Details</h3>
+                        <table class="table">
+                            <tr>
+                                <td>Order Details</td>
+                            </tr>
+                            <tr>
+                                <td>Nike air Jordan</td>
+                                <td><span>$ 7,99.00</span></td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td><span class="text-green">$ 2,99.00</span></td>
+                            </tr>
+                            <tr class="boder-bottom">
+                                <td>Delivery</td>
+                                <td><span class="text-green">$ 60.00</span></td>
+                            </tr>
+                            <tr class="total_price">
+                                <td>Total</td>
+                                <td><span>$ 5,99.00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment_method text-center float-md-end">
+                        <div class="title d-none d-sm-block">
+                            <h3>Select Payment Method</h3>
+                        </div>
+                        <div class="payment_btn mb-4">
+                            <a href="#" class="w-100">
+                                <img src="assets/images/paypal.png" alt="paypal">
+                                Express buy with Paypal
+                            </a>
+                            <a href="#" class="w-100">
+                                <img src="assets/images/applePay.png" alt="applePay">
+                                Express buy with Apple Pay
+                            </a>
+                        </div>
+                        <div class="checkout_btn">
+                            <div class="d-none d-sm-block">
+                                <a href="#" class="btn btn-primary">Checkout</a>
+                            </div>
+                            <div class="d-block d-sm-none">
+                                <a href="#" class="btn btn-primary">Pay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== cart ================================== -->
+
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        // Product Quantity
+        $(document).ready(function(){
+            // Decrease the quantity value by clicking the minus button
+            $('.incrementBtnL').click(function(){
+                var quantityInput = $(this).prev('input');
+                var currentValue = parseInt(quantityInput.val());
+                if(currentValue > 1){
+                    quantityInput.val(currentValue - 1);
+                }
+            });
+            // Increase the quantity value by clicking the plus button
+            $('.incrementBtnR').click(function(){
+                var quantityInput = $(this).next('input');
+                console.log(quantityInput);
+                quantityInput.val(parseInt(quantityInput.val()) + 1);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
