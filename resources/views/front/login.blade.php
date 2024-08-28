@@ -33,9 +33,9 @@
 @endpush
 @section('content')
     <!-- login -->
-    <div class="login_page">
+    <div class="login_page mb-3" >
         <div class="container">
-            <div class="login_form text-center">
+            <div class="login_form text-center" >
                 <h4>Welcome to</h4>
                 <h2>mhzone</h2>
                 {{-- <p>
@@ -82,7 +82,7 @@
                                     {{--                                <a href="#"><img src="{{ asset('front/assets/images/twitter.png') }}" width="20" alt="icon"></a> --}}
                                 </div>
                             @endif
-                            <button type="submit" class="btn btn-primary loading mt-3">Log In</button>
+                            <button type="submit" class="btn btn-primary loading my-3">Log In</button>
                         </form>
                     </div>
                 </div>

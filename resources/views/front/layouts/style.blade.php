@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="{{ asset('front/assets/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('front/assets/css/main.css?v=1') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/main.css?v=3') }}">
 <link rel="stylesheet" href="{{ asset('front/assets/css/responsive.css') }}">
 <link rel="stylesheet" href="{{ asset('backend') }}/plugins/toastr/toastr.min.css" />
 <script src="{{ asset('front/assets/js/jquery.js') }}"></script>

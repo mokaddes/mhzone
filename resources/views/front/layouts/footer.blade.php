@@ -1,4 +1,4 @@
-<footer class="footer_section text-center mt-5 {{ request()->is('login') ? 'fixed-bottom' : '' }} {{ request()->is('signup') ? 'fixed-bottom' : '' }}">
+<footer class="footer_section text-center mt-5 ">
     <div class="container">
         <div class="md:d-flex justify-content-between align-items-center">
             <div class="copyright">

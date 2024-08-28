@@ -664,10 +664,6 @@ body {
 
 
 .login_form {
-    position: fixed;
-    top: 20%;
-    left: 20px;
-    right: 20px;
 }
 
 .login_form h4 {
