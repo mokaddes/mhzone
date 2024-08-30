@@ -4,7 +4,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
             <a class="navbar-brand p-0" href="{{ route('frontend.index') }}">
-                <img src="{{ getPhotoAvater(setting('logo_image')) }}" width="80" title="logo" alt="{{ env('APP_NAME') }}">
+                <img src="{{ getPhotoAvater($settings->logo_image) }}" width="80" title="logo" alt="{{ env('APP_NAME') }}">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"
                 aria-controls="mobileMenu">

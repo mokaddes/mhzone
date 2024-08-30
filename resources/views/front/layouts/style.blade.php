@@ -1,5 +1,5 @@
 <!-- favicon -->
-<link rel="icon" href="{{ asset('front/assets/images/favicon.png') }}">
+<link rel="icon" href="{{ getPhotoAvater($settings->favicon_image) }}">
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
